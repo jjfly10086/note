@@ -17,6 +17,9 @@ mvn -DpropertyName=propertyValue clean/package
 <properties>
     <theme>halloween</theme>
 </properties>
+
+类似于java虚拟机参数Java System Property中的-D参数
+
 ### -P参数
 也就是说在<profiles>指定的<id>中，可以通过-P进行传递或者赋值。
 修改profile中参数
