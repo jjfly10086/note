@@ -3,12 +3,6 @@
 
 ### 1.pom.xml中build节点配置
 ```xml
-<build>
-    <resources>
-    
-    </resources>
-</build>
-```
     <!--打包插件-->
      <build>
          <resources>
@@ -81,9 +75,11 @@
              </plugin>
          </plugins>
      </build>
+```
  ### 2.assembly.xml配置
-    <!--assembly.xml配置-->
-    <assembly>
+ ```xml
+ <!--assembly.xml配置-->
+ <assembly>
      <id>bin</id>
      <!--打包目录下是否再包一层根目录-->
      <includeBaseDirectory>false</includeBaseDirectory>
@@ -126,4 +122,5 @@
              </includes>
          </fileSet>
      </fileSets>
-    </assembly>
+ </assembly>
+```
