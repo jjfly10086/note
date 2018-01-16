@@ -9,14 +9,14 @@ mvn -DpropertyName=propertyValue clean/package
 要发送多个变量，请使用多个空格分隔符加-D：
 如果你的pom.xml如下：
 
-<properties>
-    <theme>myDefaultTheme</theme>
-</properties>
+    <properties>
+        <theme>myDefaultTheme</theme>
+    </properties>
 那么在这个执行过程中mvn -Dtheme=halloween clean package会覆盖theme的值，具有如下效果：
 
-<properties>
-    <theme>halloween</theme>
-</properties>
+    <properties>
+        <theme>halloween</theme>
+    </properties>
 
 类似于java虚拟机参数Java System Property中的-D参数
 
