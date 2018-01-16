@@ -87,13 +87,13 @@
      <formats>
          <format>tar.gz</format>
      </formats>
-     <!--添加依赖到tar.gz压缩包的lib/目录下-->
+     <!--添加依赖到tar.gz压缩包的/lib目录下-->
      <!-- Adds dependencies to zip package under lib directory -->
      <dependencySets>
          <dependencySet>
-             <!--不使用项目的artifact(即不将当前项目的jar打包到lib/下)，第三方jar不要解压，打包进tar.gz文件的lib目录-->
+             <!--不使用项目的artifact(即不将当前项目的jar打包到/lib下)，第三方jar不要解压，打包进tar.gz文件的lib目录-->
              <useProjectArtifact>false</useProjectArtifact>
-             <outputDirectory>lib/</outputDirectory>
+             <outputDirectory>/lib</outputDirectory>
              <unpack>false</unpack>
          </dependencySet>
      </dependencySets>
@@ -103,7 +103,11 @@
          <!--<directory>${project.basedir}</directory>-->
          <!--<outputDirectory>/</outputDirectory>-->
          <!--</fileSet>-->
- 
+          <!--项目启动文件-->
+          <fileSet>
+              <directory>${project.basedir}/src/main/bin</directory>
+          <outputDirectory>/bin</outputDirectory>
+         </fileSet>
          <!-- 把项目的配置文件，打包进tar.gz文件的config目录 -->
          <fileSet>
              <directory>${project.build.directory}/classes/</directory>
