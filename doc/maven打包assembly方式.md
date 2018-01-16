@@ -2,6 +2,13 @@
 参考链接：http://blog.csdn.net/xiaojiesu/article/details/51871705
 
 ### 1.pom.xml中build节点配置
+```xml
+<build>
+    <resources>
+    
+    </resources>
+</build>
+```
     <!--打包插件-->
      <build>
          <resources>
