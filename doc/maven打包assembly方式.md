@@ -1,4 +1,4 @@
-### assembly打包
+### assembly打包 jar包配置
 参考链接：http://blog.csdn.net/xiaojiesu/article/details/51871705
 
 ### 1.pom.xml中build节点配置
